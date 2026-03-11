@@ -84,7 +84,7 @@ export default function App() {
     };
     scheduleNext();
     return () => clearTimeout(schedulerRef.current);
-  }, [schedulerOn, categories, tone]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [schedulerOn, categories, tone]);
 
   const handleSaveApiKey = () => {
     localStorage.setItem("claude_api_key", apiKey);
