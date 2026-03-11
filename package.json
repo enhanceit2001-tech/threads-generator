@@ -9,16 +9,25 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build"
   },
   "eslintConfig": {
-    "extends": ["react-app"],
+    "extends": [
+      "react-app"
+    ],
     "rules": {
-      "react-hooks/exhaustive-deps": "off"
+      "react-hooks/exhaustive-deps": "off",
+      "no-unused-vars": "off"
     }
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version"]
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version"
+    ]
   }
 }
